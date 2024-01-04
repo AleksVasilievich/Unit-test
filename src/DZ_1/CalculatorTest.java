@@ -17,6 +17,6 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         Assertions.assertThatThrownBy(() -> calculator.calculateDiscount(-100, 20))
                 .isInstanceOf(ArithmeticException.class)
-                .hasMessage("Invalid input: purchaseAmount and discountPercentage must be non-negative, and discountPercentage must be between 0 and 100");
+                .hasMessage("Неверный ввод: PurchaseAmount и DiscountPercentage должны быть неотрицательными, а DiscountPercentage должен находиться в диапазоне от 0 до 100.");
     }
 }

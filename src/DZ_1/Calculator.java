@@ -3,7 +3,7 @@ package DZ_1;
 public class Calculator {
     public double calculateDiscount(double purchaseAmount, double discountPercentage) {
         if (purchaseAmount < 0 || discountPercentage < 0 || discountPercentage > 100) {
-            throw new ArithmeticException("Invalid input: purchaseAmount and discountPercentage must be non-negative, and discountPercentage must be between 0 and 100");
+            throw new ArithmeticException("Неверный ввод: PurchaseAmount и DiscountPercentage должны быть неотрицательными, а DiscountPercentage должен находиться в диапазоне от 0 до 100.");
         }
 
         double discountAmount = purchaseAmount * (discountPercentage / 100);
